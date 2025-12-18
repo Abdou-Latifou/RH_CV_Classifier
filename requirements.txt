@@ -1,0 +1,17 @@
+Flask==3.0.3
+pdfplumber==0.11.4
+pdfminer.six==20231228
+nltk==3.9.1
+scikit-learn==1.5.2
+matplotlib==3.9.2
+seaborn==0.13.2
+pytesseract==0.3.10
+Pillow>=10.0.0
+pdf2image==1.16.3
+python-docx==0.8.11
+python-pptx==0.6.21
+openpyxl==3.1.2
+pandas==2.2.0
+imapclient==3.0.1
+schedule==1.2.2
+python-dotenv==1.0.0
