@@ -1,13 +1,3 @@
-Flask==3.0.3
-pdfplumber==0.11.4          # Extraction PDF (essentiel)
-nltk==3.9.1                 # NLP (essentiel)  
-scikit-learn==1.5.2         # Modèle ML (essentiel)
-python-docx==0.8.11         # DOCX CV
-python-pptx==0.6.21         # PPTX CV
-openpyxl==3.1.2             # Excel CV
-pandas==2.2.3
-Pillow==10.0.0              # Images CV
-schedule==1.2.0             # Tâches planifiées
-ngunicorn==20.1.0           # Serveur d'application
-email-validator==2.0.0      # Validation des emails
-nimportlib-metadata==6.8.0
+﻿flask
+gunicorn
+importlib-metadata
