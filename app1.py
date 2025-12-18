@@ -28,7 +28,8 @@ from threading import Thread
 from classifier import CVClassifier
 from email_processor import start_email_monitoring
 import shutil
-
+from flask import Flask, request, jsonify
+from threading import Thread 
 
 
 # Télécharger TOUS les modèles NLTK nécessaires (une fois pour toutes)
@@ -584,8 +585,10 @@ def classify():
 def performance():
     return "Page non trouvée", 404
 
-if __name__ == '__main__':
-    email_thread = Thread(target=start_email_monitoring, daemon=True)
-    email_thread.start()
-    print("Surveillance des emails démarrée en arrière-plan")
-    app.run(debug=True, port=5001)
+#if __name__ == '__main__':
+ #   email_thread = Thread(target=start_email_monitoring, daemon=True)
+  #  email_thread.start()
+   # print("Surveillance des emails démarrée en arrière-plan")
+    #app.run(debug=True, port=5001)
+    
+app = Flask(__name__)
