@@ -5,6 +5,6 @@ scikit-learn==1.5.2         # Modèle ML (essentiel)
 python-docx==0.8.11         # DOCX CV
 python-pptx==0.6.21         # PPTX CV
 openpyxl==3.1.2             # Excel CV
-#pandas==2.1.4               # Data (version compatible)
+pandas==2.2.3
 Pillow==10.0.0              # Images CV
 schedule==1.2.0             # Tâches planifiées
