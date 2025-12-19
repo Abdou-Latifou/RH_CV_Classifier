@@ -137,10 +137,14 @@ def process_attachment(part, filename, sender_email):
         if os.path.exists(file_path):
             logging.info(f"CV déjà traité et classé: {file_path}")
             return None  # Ne pas retraiter
-        
+
         with open(file_path, 'wb') as f:
             f.write(part.get_payload(decode=True))
         logging.info(f"Fichier sauvegardé: {file_path}")
+
+        # Ajouter les métadonnées pour l'affichage dans l'app (comme pour les uploads manuels)
+        add_cv_metadata(safe_profile, filename)
+        logging.info(f"Métadonnées ajoutées pour {filename} dans le profil {safe_profile}")
 
         result = {
             'filename': filename,
